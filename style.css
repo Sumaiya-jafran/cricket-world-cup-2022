@@ -1,0 +1,72 @@
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;500;600;700&display=swap');
+
+/* Global Style  */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+width: 1170px;
+margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+a.btn{
+    color: white;
+    padding: 10px 20px;
+    margin-top: 30px;
+    display: inline-block;
+    background-color: darkorange;
+}
+/* Global style end  */
+
+/* Hero section  */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 50px 80px 0 80px;
+    border-radius: 30px;
+    /* background-image: url('./assets/Banner-Image.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right ; */
+    
+
+}
+.hero-text{
+    width: 50%;
+}
+.hero-text h1{
+    font-size: 60px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 70px;
+    
+}
+.hero-text p{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 25px;
+}
+
+.hero-text a span{
+    margin-right: 10px;
+}
+.hero-img{
+    width: 50%;
+    text-align: right;
+    
+}
+.hero-img img{
+    width: 100%;
+}
