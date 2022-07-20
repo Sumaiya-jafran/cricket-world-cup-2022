@@ -51,8 +51,10 @@
         grid-template-columns: repeat(2,1fr);
     }
 
-
-
+/* match section media for tab view  */
+    .matches{
+        grid-template-columns: repeat(2,1fr);
+    }
     .view-btn{
         display: block;
         text-align: center;
@@ -119,9 +121,12 @@
     .blogs{
         grid-template-columns: repeat(1,1fr);
     }
+    /* match section media for tab view  */
+    .matches{
+        grid-template-columns: repeat(1,1fr);
+    }
     .footer-menu{
-        grid-template-columns: repeat(1,1fr);   
-        row-gap: 20px;    
+        flex-direction: column;   
     }
     .view-btn{
         text-align: center;
