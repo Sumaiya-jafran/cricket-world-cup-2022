@@ -12,6 +12,13 @@ body{
 section{
     padding:50px 0;
 }
+.d-flex{
+    display:flex;
+}
+.acjc{
+    align-items: center;
+    justify-content: center;
+}
 .container{
 width: 90%;
 margin: 0 auto;
@@ -22,7 +29,6 @@ a{
 a.btn{
     color: white;
     padding: 10px 20px;
-    margin-top: 30px;
     display: inline-block;
     background-color: darkorange;
 }
@@ -56,6 +62,7 @@ a.btn{
 }
 .hero-text p{
     margin-top: 10px;
+    margin-bottom: 30px;
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
@@ -98,7 +105,8 @@ aside a{
     text-align: center;
 
 }
-aside a:nth-child(1){
+
+/* aside a:nth-child(1){
     background-color:whitesmoke;
     color: darkorange;
     border: 2px solid darkorange;
@@ -110,7 +118,7 @@ aside a:nth-child(2){
 }
 aside a:nth-child(3){
     border: 2px solid darkorange;
-}
+} */
 /* aside fixed sidebar end */
 /* blog style start */
 .blogs{
@@ -149,12 +157,32 @@ aside a:nth-child(3){
 }
 .blog-comment{
     display: flex;
-    align-items: center;
-    justify-content: center;
+
     gap: 10px;
 }
 /* blog style end */
 /* blog section end */
+/* upcomming matches style start here */
+.match{
+    padding: 60px 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.flag{
+  gap: 30px;
+}
+.match-time{
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 10px;
+}
+.matches{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+/* upcomming matches style end here */
 .view-btn{
     text-align: center;
     display: none;
@@ -172,8 +200,10 @@ footer hr{
     margin: 30px 0;
 }
 .footer-menu{
-    display: grid;
-    grid-template-columns: repeat(6,1fr);  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; 
 }
 .footer-menu a{
     color: gray;

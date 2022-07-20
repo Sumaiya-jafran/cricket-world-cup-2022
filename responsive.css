@@ -59,11 +59,9 @@
         
     }
     .footer-menu{
-        grid-template-columns: repeat(4,1fr);       
+        flex-wrap: wrap;  
     }
-    .footer-menu a{
-        
-    }
+   
 }
 
 /* Media query for tablet, end here */
@@ -80,13 +78,6 @@
         background-color: black;
         color: white;
         padding: 50px 50px 0 50px ;
-        border-radius: 30px;
-        /* background-image: url('./assets/Banner-Image.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: bottom right ; */
-        
-    
     }
     .hero-text{
         width: 100%;
