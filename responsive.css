@@ -1,5 +1,8 @@
 /* Media query for tablet, start here */
 @media only screen and (max-width: 768px){
+    section{
+        padding:10px 0;
+    }
     .hero-text h1 {
         font-size: 32px;
         font-weight: 700;
@@ -56,14 +59,7 @@
         
     }
     .footer-menu{
-        /* display: grid;
-           */
-        display: grid;
-        justify-items: center;
-        grid-template-columns: repeat(4,1fr);
-        
-       
-       
+        grid-template-columns: repeat(4,1fr);       
     }
     .footer-menu a{
         
@@ -73,6 +69,72 @@
 /* Media query for tablet, end here */
 /* Media query for mobile device, start here */
 @media only screen and (max-width: 520px){
+    section{
+        padding:10px 0;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        padding: 50px 50px 0 50px ;
+        border-radius: 30px;
+        /* background-image: url('./assets/Banner-Image.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom right ; */
+        
     
+    }
+    .hero-text{
+        width: 100%;
+        text-align: center;
+    }
+    .hero-text h1 {
+        font-size: 28px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 35px;
+    }
+    .hero-text p{
+        /* Ellipsis for 1 line  */
+        /* width: 100%;
+        white-space:nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; */
+        /* ellipsis for 2 lines  */
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+        font-size: 11px;
+        
+    } 
+    .hero-img{
+        width: 100%;
+        text-align: center;   
+    }
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    a.btn{
+        margin-top: 10px;
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer-menu{
+        grid-template-columns: repeat(1,1fr);   
+        row-gap: 20px;    
+    }
+    .view-btn{
+        text-align: center;
+        display: none;
+    }
 }
 /* Media query for mobile device, end here */
